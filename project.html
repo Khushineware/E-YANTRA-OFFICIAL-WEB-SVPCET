@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project | SVPC e-Yantra Club</title>
+
+  <meta
+    name="description"
+    content="Explore the portfolio of innovative projects from SVPCET Nagpur's e-Yantra Club, spanning robotics, AI, IoT, and embedded systems."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Updated CSS paths -->
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/project.css" />
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="top-bar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#home" class="logo">
+        <i class="fas fa-robot"></i>
+        <span>SVPC e-Yantra</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li>
+            <a href="index.html#achievements" class="nav-link">Achievements</a>
+          </li>
+          <li><a href="index.html#training" class="nav-link">Training</a></li>
+          <li><a href="project.html" class="nav-link active">Project</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Toggle Menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <h1 class="animated-gradient-text">Our Project</h1>
+        <p>
+          A showcase of our dedication to innovation, problem-solving, and
+          technology.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-page-section">
+      <div class="container">
+        <div class="filter-controls animate-fade-in">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+          <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <div class="project-card animate-card" data-status="completed">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1558346549-1c996f235f3d?q=80&w=2070&auto=format&fit=crop"
+                alt="Automated Lab"
+                loading="lazy"
+              />
+              <div class="project-status completed">Completed</div>
+            </div>
+            <div class="project-content">
+              <h3>Smart Automated Lab</h3>
+              <p>
+                An autonomous system for managing lab equipment and experiments
+                using IoT and robotics.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Automation</span><span class="tag">IoT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card animate-card" data-status="ongoing">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1517554253623-21c6b9035c7b?q=80&w=2070&auto=format&fit=crop"
+                alt="Agri-Drone"
+                loading="lazy"
+              />
+              <div class="project-status ongoing">Ongoing</div>
+            </div>
+            <div class="project-content">
+              <h3>AI-Powered Agri-Drone</h3>
+              <p>
+                A drone for precision agriculture that uses AI for real-time
+                crop health analysis and pest detection.
+              </p>
+              <div class="project-tags">
+                <span class="tag">AI/ML</span
+                ><span class="tag">Drones</span
+                ><span class="tag">Agriculture</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card animate-card" data-status="completed">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1584515933487-779824d27929?q=80&w=2070&auto=format&fit=crop"
+                alt="Saline Monitoring"
+                loading="lazy"
+              />
+              <div class="project-status completed">Completed</div>
+            </div>
+            <div class="project-content">
+              <h3>Smart Saline Monitoring System</h3>
+              <p>
+                An IoT-based device that monitors saline levels for patients and
+                alerts staff in real-time.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Healthcare</span
+                ><span class="tag">Sensors</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card animate-card" data-status="completed">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1601664273889-9a0731559d18?q=80&w=1974&auto=format&fit=crop"
+                alt="Smart Greenhouse"
+                loading="lazy"
+              />
+              <div class="project-status completed">Completed</div>
+            </div>
+            <div class="project-content">
+              <h3>Smart Greenhouse System</h3>
+              <p>
+                Creates artificial conditions to optimize plant growth by
+                controlling light, water, and temperature.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Agriculture</span
+                ><span class="tag">Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card animate-card" data-status="ongoing">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1620712943543-959612833630?q=80&w=2070&auto=format&fit=crop"
+                alt="Robotic Arm"
+                loading="lazy"
+              />
+              <div class="project-status ongoing">Ongoing</div>
+            </div>
+            <div class="project-content">
+              <h3>Warehouse Sorting Robotic Arm</h3>
+              <p>
+                A robotic arm that uses computer vision to identify and sort
+                packages in a warehouse environment.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Robotics</span
+                ><span class="tag">Computer Vision</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="no-results" class="no-results-message" style="display: none">
+          <p>No projects match the selected filter.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <i class="fas fa-robot"></i><span>SVPC e-Yantra</span>
+          </div>
+          <p class="footer-description">
+            Innovating Minds, Building the Future. Join us to explore the world
+            of robotics, AI, and embedded systems.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#achievements">Achievements</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="index.html#about">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <div class="contact-info">
+            <p>
+              <i class="fas fa-envelope"></i
+              ><span>eyantra@svpcet.ac.in</span>
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i
+              ><span>SVPCET, Nagpur</span>
+            </p>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 SVPC e-Yantra Club. All Rights Reserved.</p>
+        <p>Made with ❤️ by the e-Yantra Team</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Updated JS paths -->
+  <script src="js/index.js" defer></script>
+  <script src="js/project.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* ===== PROJECT PAGE STYLES ===== */
+
+/* Page Hero Section */
+.page-hero {
+  padding: clamp(6rem, 15vw, 10rem) var(--container-padding);
+  text-align: center;
+  position: relative;
+}
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+}
+.page-hero h1 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  margin-bottom: 1rem;
+}
+.page-hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Project Section Styling */
+.project-page-section {
+  padding: var(--section-padding);
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+}
+.filter-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+.filter-btn.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+/* Project Grid Styling */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Project Card */
+.project-card .project-image {
+  position: relative;
+}
+.project-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 999px;
+  color: white;
+  text-transform: capitalize;
+}
+.project-status.completed {
+  background-color: #16a34a; /* Green */
+}
+.project-status.ongoing {
+  background-color: #ea580c; /* Orange */
+}
+
+/* Hiding cards for filtering */
+.project-card.hide {
+  display: none;
+}
+
+/* No results message */
+.no-results-message {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Active nav link styling */
+.nav-link.active {
+  color: var(--text-primary);
+  position: relative;
+}
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+}
+.animate-card,
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.animate-card.visible,
+.animate-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card.hide {
+  display: none !important;
+}
